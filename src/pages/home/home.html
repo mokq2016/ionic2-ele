@@ -1,0 +1,79 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content (ionScroll)="onScroll($event)">
+    <div class="header-div">
+        <div class='location-div'>
+            <ion-icon ios="ios-pin" md="md-pin"></ion-icon>
+            <span>{{location}}</span>
+            <ion-icon name="arrow-dropdown"></ion-icon>
+        </div>
+        <div class="search-div" [class]="isFixed?'fix-searchbar':''">
+            <ion-searchbar></ion-searchbar>
+        </div>
+
+        <div class="nav-div">
+            <ul>
+                <li>肯德基</li>
+                <li>烤肉</li>
+                <li>吉野家</li>
+                <li>粥</li>
+                <li>星巴克</li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider-div">
+        <ion-slides pager>
+
+            <ion-slide>
+                <div class="slider-view">
+                    <div class='slider-item' *ngFor="let item of slider1Arr">
+                        <img [src]="'./assets/imgs/'+item.imgSrc" />
+                        <p>{{item.des}}</p>
+                    </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slider-view">
+                    <div class='slider-item' *ngFor="let item of slider2Arr">
+                        <img [src]="'./assets/imgs/'+item.imgSrc" />
+                        <p>{{item.des}}</p>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="advert-div">
+        <img src="./assets/imgs/ad1.png" alt="">
+    </div>
+    <div class="hot-div">
+        <div class='hot-item' *ngFor='let item of hotArr'>
+            <div><span>{{item.des}}</span>
+                <label>{{item.des}}</label>
+            </div>
+            <img [src]="'./assets/imgs/'+item.imgSrc" alt="">
+        </div>
+    </div>
+    <div class="quality-div">
+        <div class="header">
+            <div class="title">品质优选</div>
+            <div class="more">
+                <span>更多</span>
+                <ion-icon name="arrow-forward"></ion-icon>
+            </div>
+        </div>
+        <div class="content">
+            <div class="quality-item" *ngFor="let item of qualityArr">
+                <img [src]="'./assets/imgs/'+item.imgSrc" alt="">
+                <label>{{item.des}}</label>
+                <span [class]="item.type == '1'?'big':'hot'">{{item.type == '1'?'大牌精选':'热销好店'}}</span>
+            </div>
+        </div>
+    </div>
+</ion-content>
