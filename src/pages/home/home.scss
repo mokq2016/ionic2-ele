@@ -1,5 +1,6 @@
 page-home {
     .header-div {
+        padding-top: $cordova-md-statusbar-padding;
         background: linear-gradient(to right, #01AAFF, #0086FF);
         color: white;
         .location-div {

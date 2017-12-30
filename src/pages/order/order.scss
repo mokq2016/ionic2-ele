@@ -1,3 +1,38 @@
 page-order {
-
+    .container {
+        .list {
+            .item {
+                border-bottom: 1px solid #F7F7F7;
+                display: flex;
+                padding: 10px 6px 40px 10px;
+                .desc {
+                    flex: 1;
+                    padding-left: 8px;
+                    h1 {
+                        margin: 0;
+                        font-size: 2rem;
+                    }
+                    time {
+                        color: #ccc;
+                        display: inline-block;
+                        margin-top: 4px;
+                    }
+                    span {
+                        display: block;
+                    }
+                }
+                .right {
+                    .btn-div {
+                        position: absolute;
+                        bottom: 10px;
+                        border: 1px solid #008FFF;
+                        color: #008FFF;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                        right: 6px;
+                    }
+                }
+            }
+        }
+    }
 }

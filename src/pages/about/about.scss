@@ -1,3 +1,68 @@
 page-about {
-
+    .toolbar-background {
+        border: none!important;
+    }
+    .toolbar {
+        min-height: 48px;
+    }
+    .container {
+        background: #F5F5F5;
+        .user-info {
+            background: linear-gradient(to right, #01AAFF, #0086FF);
+            color: white;
+            display: flex;
+            padding: 10px;
+            .img {
+                font-size: 8rem;
+            }
+            .login-info {
+                flex: 1;
+                padding-left: 10px;
+                padding-top: 20px;
+                p {
+                    margin: 0;
+                    margin-bottom: 10px;
+                    font-size: 1.7rem;
+                }
+            }
+            .arrow {
+                align-self: center;
+            }
+        }
+        .user-account {
+            display: flex;
+            background: white;
+            .items {
+                width: 33.3vw;
+                text-align: center;
+                border-right: 2px solid #F7F7F7;
+                border-bottom: 1px solid #F7F7F7;
+                padding: 10px 1px;
+                label {
+                    display: block;
+                    b {
+                        font-size: 2rem;
+                    }
+                }
+                span {
+                    color: #B4B4B4;
+                }
+            }
+        }
+        .menu-list {
+            .list {
+                margin: 6px 0;
+                .item-block {
+                    border-color: #F7F7F7;
+                    .item-inner {
+                        border-color: #F7F7F7;
+                    }
+                }
+                span {
+                    font-size: 1.4rem;
+                    color: #B4B4B4;
+                }
+            }
+        }
+    }
 }

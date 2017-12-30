@@ -19,3 +19,12 @@
 .toolbar-title {
     color: white;
 }
+
+.platform-android {
+    .ion-page {
+        ion-header {
+            padding-top: $cordova-md-statusbar-padding;
+            background: linear-gradient(to right, #01AAFF, #0086FF);
+        }
+    }
+}

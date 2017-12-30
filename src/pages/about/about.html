@@ -6,13 +6,110 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>about</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>我的</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color='#fff'>
+                <ion-icon ios="ios-notifications" md="md-notifications" style="color:white"></ion-icon>
+        <ion-icon name="settings" style="color:white"></ion-icon>
+      </button>
+        </ion-buttons>
+    </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+    <div class="container">
+        <div class="user-info">
+            <div class="img">
+                <ion-icon name="contact"></ion-icon>
+            </div>
+            <div class="login-info">
+                <p>立即登录</p>
+                <span>登录后可享受更多特权</span>
+            </div>
+            <div class="arrow">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </div>
+        </div>
+        <div class="user-account">
+            <div class="items">
+                <label style="color:#F7A70D">
+                  <b>1111.22</b>
+                  元
+            </label>
+                <span>余额</span>
+            </div>
+            <div class="items"><label style="color:#FF5423">
+                <b >1111</b>
+                个
+            </label>
+                <span>优惠</span></div>
+            <div class="items" style="border-right:none;"><label style="color:#59DD1E">
+                <b >1111222</b>
+                分
+            </label>
+                <span>积分</span></div>
+        </div>
+        <div class="menu-list">
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="pin" item-start style="color:#01A4FF"></ion-icon>
+                    收货地址
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="heart" item-start style="color:#FC7B54"></ion-icon>
+                    我的收藏
+                </ion-item>
+            </ion-list>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="archive" item-start style="color:#FC7C4A"></ion-icon>
+                    推荐有奖
+                    <span item-end>5元现金拿不停</span>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="cart" item-start style="color:#92D544"></ion-icon>
+                    金币商城
+                    <span item-end>0元好物在这里</span>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="game-controller-b" item-start style="color:#E892C4"></ion-icon>
+                    玩游戏领红包
+                    <span item-end>大红包任性领</span>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="card" item-start style="color:#01A4FF"></ion-icon>
+                    饿了么联名卡
+                    <span item-end>免费领超级会员</span>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="star" item-start style="color:#F6E49B"></ion-icon>
+                    每日精选
+                    <span item-end>全场包邮一元起</span>
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="flame" item-start style="color:#01A4FF"></ion-icon>
+                    免费流量
+                    <span item-end>每月最高500M</span>
+                </ion-item>
+            </ion-list>
+            <ion-list>
+                <ion-item>
+                    <ion-icon name="headset" item-start style="color:#01A4FF"></ion-icon>
+                    我的客服
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="thumbs-up" item-start style="color:#01A4FF"></ion-icon>
+                    欢迎评分
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="call" item-start style="color:#01A4FF"></ion-icon>
+                    加盟合作
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
 
 </ion-content>

@@ -99,12 +99,11 @@ export class HomePage {
     this.location = "深圳市福田区上沙村";
   }
   onScroll($event: any){
-    console.log($event.scrollTop)
-    if($event.scrollTop>= 44){
-      this.isFixed = true;
-    }else{
-      this.isFixed = false;
-    }
+    // if($event.scrollTop>= 44){
+    //   this.isFixed = true;
+    // }else{
+    //   this.isFixed = false;
+    // }
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');

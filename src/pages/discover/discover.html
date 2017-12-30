@@ -6,13 +6,136 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>discover</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>发现</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+    <div class="typeContainer">
+        <table class="type-table">
+            <tr>
+                <td>
+                    <div class="des-div">
+                        <label>
+                            金币商城
+                        </label>
+                        <span>
+                            0元好物在这里
+                        </span>
+                    </div>
+                    <div class="img-div">
+                        <img [src]="'./assets/imgs/dis_1.png'" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="des-div">
+                        <label>
+                        有红包快抢
+                    </label>
+                        <span>
+                        礼包福利涨不停
+                    </span>
+                    </div>
+                    <div class="img-div">
+                        <img [src]="'./assets/imgs/dis_2.png'" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="des-div">
+                        <label>
+                        必吃爆料
+                    </label>
+                        <span>
+                        最夯外卖指南
+                    </span>
+                    </div>
+                    <div class="img-div">
+                        <img [src]="'./assets/imgs/dis_3.png'" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="des-div">
+                        <label>
+                        推荐有奖
+                    </label>
+                        <span>
+                        5元现金拿不停
+                    </span>
+                    </div>
+                    <div class="img-div">
+                        <img [src]="'./assets/imgs/dis_4.png'" alt="">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="des-div">
+                        <label>
+                        周边优惠
+                    </label>
+                        <span>
+                        领取口碑好劵
+                    </span>
+                    </div>
+                    <div class="img-div">
+                        <img [src]="'./assets/imgs/dis_5.png'" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="des-div">
+                        <label>
+                        免费流量
+                    </label>
+                        <span>
+                        每月最高500M
+                    </span>
+                    </div>
+                    <div class="img-div">
+                        <img [src]="'./assets/imgs/dis_6.png'" alt="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="middle-ad">
+        <img [src]="'./assets/imgs/dis_ad.png'" alt="">
+    </div>
+    <section class="fooditems" *ngFor="let item of discoverItems">
+        <div class="title">
+            <img [src]="'./assets/imgs/dis_title1.png'" alt="">
+            <img [src]="'./assets/imgs/dis_good.png'" alt="">
+            <span>{{item.title}}</span>
+            <img [src]="'./assets/imgs/dis_title2.png'" alt="">
+        </div>
+        <div class="describe">
+            <span>{{item.title_des}}</span>
+        </div>
+        <div class="foodcontent">
+            <figure>
+                <img [src]="'./assets/imgs/'+item.typeArr[0].imgSrc" />
+                <p>{{item.typeArr[0].name}}</p>
+                <span class="money">￥{{item.typeArr[0].price}}</span>
+            </figure>
+            <figure>
+                <img [src]="'./assets/imgs/'+item.typeArr[1].imgSrc" />
+                <p>{{item.typeArr[1].name}}</p>
+                <span class="money">￥{{item.typeArr[1].price}}</span>
+            </figure>
+            <figure>
+                <img [src]="'./assets/imgs/'+item.typeArr[2].imgSrc" />
+                <p>{{item.typeArr[2].name}}</p>
+                <span class="money">￥{{item.typeArr[2].price}}</span>
+            </figure>
+        </div>
+        <div class="footer">
+            <span>查看更多</span>
+            <ion-icon name="arrow-forward"></ion-icon>
+        </div>
+        <div class="space"></div>
+    </section>
 </ion-content>
